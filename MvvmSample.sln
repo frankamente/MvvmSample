@@ -3,8 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ui", "Ui", "{A917AAB1-3FCB-4892-82C0-70EEF18073AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{92219D77-9E98-4FD2-ADFB-0981CE277B7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".shared", ".shared", "{929B8830-02BC-4646-BFE6-6C632A15E113}"
+	ProjectSection(SolutionItems) = preProject
+		.shared\SharedAssemblyInfo.cs = .shared\SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ui.Desktop", "Ui.Desktop\Ui.Desktop.csproj", "{BBDAED84-4731-4B33-BCDE-F2B4E3694CB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Ui", "Logic\Logic.Ui\Logic.Ui.csproj", "{D619687F-E6AC-41C6-9FCF-7CC1C57E9C51}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBDAED84-4731-4B33-BCDE-F2B4E3694CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDAED84-4731-4B33-BCDE-F2B4E3694CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDAED84-4731-4B33-BCDE-F2B4E3694CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDAED84-4731-4B33-BCDE-F2B4E3694CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D619687F-E6AC-41C6-9FCF-7CC1C57E9C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D619687F-E6AC-41C6-9FCF-7CC1C57E9C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D619687F-E6AC-41C6-9FCF-7CC1C57E9C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D619687F-E6AC-41C6-9FCF-7CC1C57E9C51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBDAED84-4731-4B33-BCDE-F2B4E3694CB8} = {A917AAB1-3FCB-4892-82C0-70EEF18073AF}
+		{D619687F-E6AC-41C6-9FCF-7CC1C57E9C51} = {92219D77-9E98-4FD2-ADFB-0981CE277B7F}
 	EndGlobalSection
 EndGlobal
